@@ -18,7 +18,6 @@ const Banner = () => {
       <p className='text-[#627382] text-xs sm:text-lg' >
        Access premium AI tools, design assets, templates, and productivity<br></br>
 software—all in one place. Start creating faster today.<br></br>
-
 Explore Products
 
       </p>

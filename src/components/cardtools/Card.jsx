@@ -3,12 +3,12 @@ const Card = ({ cardData }) => {
   const data = use(cardData);
   console.log(data);
   return (
-    <div className="w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+    <div className="container w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
       {
       data.map((card, index) => {
         return (
           <div key={index} className="card">
-            <div className="card bg-base-100 border border-gray-300">
+            <div className="card bg-base-100 border shadow border-gray-300">
               <div className="card-body">
                 <div>
                   <div className="h-14 w-14 rounded-full border border-green-200 flex items-center justify-center"> <img src={card.icon} alt="" /></div>

@@ -19,7 +19,7 @@ const Cardtools = () => {
                     <button className="btn text-white font-semibold bg-linear-65 from-[#067D68] to-[#50D5B7] rounded-full transition-all ease-in-out duration-400 hover:scale-105 btn-sm sm:btn-md sm:mx-0">Products</button>
                     <button className='btn btn-ghost font-semibold rounded-full transition-all ease-in-out duration-400 hover:scale-105 btn-sm sm:btn-md sm:mx-0'>Cart (0)</button>
                  </div>
-                    <Suspense>
+                    <Suspense fallback={<div className='text-center'><span className="loading loading-spinner loading-xl"></span></div>}>
 
                      <Card cardData={cardData}></Card>
                     </Suspense>
