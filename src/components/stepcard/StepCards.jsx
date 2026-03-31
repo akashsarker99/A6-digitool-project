@@ -5,7 +5,7 @@ import Rocket from '../../assets/rocket-02.png'
 const StepCards = () => {
     return (
         <div>
-            <div className='bg-[#F9FAFC] container mx-auto mt-14 pt-13 text-center px-7'>
+            <div className='bg-[#F9FAFC] container mx-auto mt-14 py-13 text-center px-7'>
                 <h2 className='text-lg sm:text-3xl md:text-4xl font-extrabold mb-3'>Get Started in 3 Steps</h2>
                 <p className='text-[#627382]'>Start using premium digital tools in minutes, not hours.</p>
 
@@ -20,7 +20,7 @@ const StepCards = () => {
                     </div>
 
                     <div className='border border-gray-300 flex flex-col items-center py-20 space-y-3 rounded-2xl relative bg-white px-6'>
-                        <span className='h-10 w-10 flex items-center justify-center font-bold bg-linear-to-r from-[#067D68] to-[#50D5B7] rounded-full text-white absolute right-5 top-5'>01</span>
+                        <span className='h-10 w-10 flex items-center justify-center font-bold bg-linear-to-r from-[#067D68] to-[#50D5B7] rounded-full text-white absolute right-5 top-5'>02</span>
                         <div className='bg-[#dbfff7] h-20 w-20 rounded-full flex justify-center items-center p-4'>
                            <img src={Product} alt="" />
                         </div>
@@ -29,7 +29,7 @@ const StepCards = () => {
                     </div>
 
                     <div className='border border-gray-300 flex flex-col items-center py-20 space-y-3 rounded-2xl relative bg-white px-6'>
-                        <span className='h-10 w-10 flex items-center justify-center font-bold bg-linear-to-r from-[#067D68] to-[#50D5B7] rounded-full text-white absolute right-5 top-5'>01</span>
+                        <span className='h-10 w-10 flex items-center justify-center font-bold bg-linear-to-r from-[#067D68] to-[#50D5B7] rounded-full text-white absolute right-5 top-5'>03</span>
                         <div className='bg-[#dbfff7] h-20 w-20 rounded-full flex justify-center items-center p-4'>
                            <img src={Rocket} alt="" />
                         </div>
