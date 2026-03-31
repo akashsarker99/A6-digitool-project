@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <div>
 
-            <div className="navbar bg-base-100 w-full mx-auto border-b border-gray-400">
+            <div className="navbar bg-base-100 w-full mx-auto border-b border-gray-400 px-13">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -52,7 +52,7 @@ const Navbar = () => {
       </div>
     </div>
      <button className='ml-3 text-lg '>Login</button>
-           <button className= 'btn text-white font-bold bg-linear-65 from-[#4F39F6] to-[#9514FA] rounded-full ml-2'>Get Started</button>
+           <button className= 'btn text-white font-bold bg-linear-65 from-[#4F39F6] to-[#9514FA] rounded-full ml-2 transition-all ease-in-out duration-400 hover:scale-105'>Get Started</button>
    
   </div>
 </div>
