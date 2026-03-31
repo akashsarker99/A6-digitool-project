@@ -1,7 +1,7 @@
 import React, { use } from "react";
 const Card = ({ cardData }) => {
   const data = use(cardData);
-  console.log(data);
+
   return (
     <div className="container w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
       {
@@ -28,7 +28,7 @@ const Card = ({ cardData }) => {
                 </div>
                 <ul className="mt-2 flex flex-col gap-2 text-xs">
                     {
-                        card.features.map(feature =>  <li>
+                        card.features.map((feature,ind) =>  <li key={ind}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="size-4 me-2 inline-block text-success"
