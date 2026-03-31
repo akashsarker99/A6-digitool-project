@@ -6,18 +6,18 @@ const Banner = () => {
     return (
         <div>
             <div className="hero w-11/12 mx-auto my-8">
-  <div className="hero-content flex-col lg:flex-row-reverse">
+  <div className="hero-content flex-col lg:flex-row-reverse lg:gap-8">
     <img
       src={bannerimg}
       className="max-w-sm rounded-lg w-[80%]"
     />
-    <div className=' space-y-3'>
+    <div className='space-y-3 text-center sm:text-left'>
         
-            <button className='bg-[#dbfff7] px-4 text-center py-1 rounded-full font-semibold text-[#067D68] flex items-center justify-center gap-2 text-sm sm:text-lg'><FaDotCircle></FaDotCircle> New: AI-Powered Tools Available</button>
-      <h1 className="text-4xl md:text-5xl font-bold leading-tight">Supercharge Your<br></br>Digital Workflow</h1>
+          <button className='btn mx-auto sm:mx-0 shadow-none border-none bg-[#dbfff7] px-4 text-center py-1 rounded-full font-semibold text-[#067D68] flex items-center justify-center gap-2 text-sm sm:text-[16px]'><FaDotCircle></FaDotCircle> New: AI-Powered Tools Available</button>
+      <h1 className="text-3xl md:text-5xl font-bold leading-tight">Supercharge Your Digital Workflow</h1>
       <p className='text-[#627382] text-xs sm:text-lg' >
-       Access premium AI tools, design assets, templates, and productivity<br></br>
-software—all in one place. Start creating faster today.<br></br>
+       Access premium AI tools, design assets, templates, and productivity
+software—all in one place. Start creating faster today.
 Explore Products
 
       </p>
