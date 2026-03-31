@@ -20,7 +20,7 @@ const Navbar = () => {
          <li><a href="">FAQ</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost font-extrabold text-2xl md:text-3xl bg-linear-65 from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">DigiTools</a>
+    <a className="btn btn-ghost font-extrabold text-2xl md:text-3xl bg-linear-65 from-[#067D68] to-[#50D5B7] bg-clip-text text-transparent">DigiTools</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -52,7 +52,7 @@ const Navbar = () => {
       </div>
     </div>
      <button className='ml-3 text-lg '>Login</button>
-           <button className= 'btn text-white font-bold bg-linear-65 from-[#4F39F6] to-[#9514FA] rounded-full ml-2 transition-all ease-in-out duration-400 hover:scale-105'>Get Started</button>
+           <button className= 'btn text-white font-bold bg-linear-65 from-[#067D68] to-[#50D5B7] rounded-full ml-2 transition-all ease-in-out duration-400 hover:scale-105'>Get Started</button>
    
   </div>
 </div>
