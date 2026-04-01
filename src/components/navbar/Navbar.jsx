@@ -14,20 +14,20 @@ const Navbar = ({cartCount, cartTotal, setSelectOption}) => {
       <ul
         tabIndex="-1"
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-         <li><a href="">Products</a></li>
-         <li><a href="">Features</a></li>
-         <li><a href="">Pricing</a></li>
+         <li><a href="#products">Products</a></li>
+         <li><a href="#feature">Features</a></li>
+         <li><a href="#pricing">Pricing</a></li>
          <li><a href="">Testimoninals</a></li>
          <li><a href="">FAQ</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost font-extrabold text-2xl md:text-3xl bg-linear-to-r from-[#067D68] to-[#50D5B7] bg-clip-text text-transparent">DigiTools</a>
+    <a href='banner' className="btn btn-ghost font-extrabold text-2xl md:text-3xl bg-linear-to-r from-[#067D68] to-[#50D5B7] bg-clip-text text-transparent">DigiTools</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-       <li><a href="">Products</a></li>
-         <li><a href="">Features</a></li>
-         <li><a href="">Pricing</a></li>
+       <li><a href="#products">Products</a></li>
+         <li><a href="#feature">Features</a></li>
+         <li><a href="#pricing">Pricing</a></li>
          <li><a href="">Testimoninals</a></li>
          <li><a href="">FAQ</a></li>
     </ul>

@@ -18,12 +18,12 @@ const Card = ({ data, cart, setCart, cartCount, setCartCount, cartTotal, setCart
   }
  
   return (
-    <div className="container w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <div id="products" className="container w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
       {
       data.map((card, index) => {
         return (
           <div key={index} className="card">
-            <div className="card rounded-2xl bg-base-100 border shadow border-gray-300">
+            <div className="card rounded-2xl bg-base-100 border shadow-lg border-gray-300 transition-all ease-in-out duration-400 hover:-translate-y-2 hover:border-green-600">
               <div className="card-body">
                 <div>
                   <div className="h-14 w-14 rounded-full border border-green-200 flex items-center justify-center"> <img src={card.icon} alt="" /></div>

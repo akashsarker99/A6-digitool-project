@@ -4,7 +4,7 @@ import { FaDotCircle, FaPlay } from 'react-icons/fa';
 import { FaArrowRightLong } from 'react-icons/fa6';
 const Banner = () => {
     return (
-        <div>
+        <div id='banner' className='scroll-mt-22'>
             <div className="hero w-11/12 mx-auto my-8">
   <div className="hero-content flex-col lg:flex-row-reverse lg:gap-8">
     <img

@@ -37,15 +37,15 @@ const Cart = ({cart, setCart, cartCount, setCartCount, cartTotal, setCartTotal})
            
     <section className='space-y-3.5'>
     {
-     cart.map(cartCard =>  <div className='flex justify-between items-center bg-[#F9FAFC] p-5 rounded-2xl shadow'>
-                    <div className='flex gap-6 items-center'>
-                       <span className='h-14 w-14 rounded-full border flex justify-center items-center border-gray-300'><img src={cartCard.icon} alt="" /></span>
+     cart.map(cartCard =>  <div className='flex justify-between items-center bg-[#F9FAFC] p-2 sm:p-5 rounded-2xl shadow'>
+                    <div className='flex gap-2 sm:gap-6 items-center'>
+                       <span className='h-10 w-10 sm:h-14 sm:w-14 rounded-full border flex justify-center items-center border-gray-300'><img className='w-[50%]' src={cartCard.icon} alt="" /></span>
                         <div>
-                            <h2 className='font-bold text-sm sm:text-xl'>{cartCard.name}</h2>
-                            <p className='text-[#627382] font-bold text-sm sm:text-lg'>${cartCard.price}</p>
+                            <h2 className='font-bold text-xsm sm:text-xl'>{cartCard.name}</h2>
+                            <p className='text-[#627382] font-bold text-xsm sm:text-lg'>${cartCard.price}</p>
                         </div>
                     </div>
-                        <span onClick={()=> cartDeleteHandle(cartCard)} className='btn h-10 w-10 rounded-full text-2xl text-red-500'><button><TiDelete></TiDelete></button></span>
+                        <span onClick={()=> cartDeleteHandle(cartCard)} className='btn h-8 w-8 sm:h-10 sm:w-10 rounded-full text-2xl text-red-500'><button><TiDelete></TiDelete></button></span>
                 </div>)
                }
 

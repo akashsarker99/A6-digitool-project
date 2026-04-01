@@ -10,6 +10,7 @@ import StepCards from './components/stepcard/StepCards'
 import Footer from './components/footer/Footer'
 import CardUpperSide from './components/cardtools/CardUpperSide'
 import { ToastContainer } from 'react-toastify'
+import ReadySection from './components/readysection/ReadySection'
 
 const priceCard = async () =>{
     const res = await fetch('/pricingData.json')
@@ -48,7 +49,8 @@ const [cartTotal, setCartTotal] = useState(0);
        <Pricing response={response}></Pricing>
 
        </Suspense>
-
+        
+        <ReadySection></ReadySection>
        <Footer></Footer>
 
        <ToastContainer></ToastContainer>
