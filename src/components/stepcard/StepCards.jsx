@@ -6,7 +6,7 @@ const StepCards = () => {
     return (
         <div>
             <div className='bg-[#F9FAFC] container mx-auto mt-14 py-13 text-center px-7'>
-                <h2 className='text-lg sm:text-3xl md:text-4xl font-extrabold mb-3'>Get Started in 3 Steps</h2>
+                <h2 className='text-2xl sm:text-3xl md:text-4xl font-extrabold mb-3'>Get Started in 3 Steps</h2>
                 <p className='text-[#627382]'>Start using premium digital tools in minutes, not hours.</p>
 
                 <div className='step-card-container mt-8 lg:w-11/12 grid grid-cols-1 justify-center sm:grid-cols-2 md:grid-cols-3 mx-auto gap-8'>

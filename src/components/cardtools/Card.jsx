@@ -1,14 +1,28 @@
-import React, { use } from "react";
-const Card = ({ cardData }) => {
-  const data = use(cardData);
+import React from "react";
+import { toast } from "react-toastify";
+const Card = ({ data, cart, setCart, cartCount, setCartCount, cartTotal, setCartTotal}) => {
 
+  const cartHandle =(card)=>{
+     let itemExist = cart.find(cartitem => cartitem.name === card.name);
+
+     if(itemExist){
+      toast.error('Product already exist in cart')
+      return
+     }
+      let newCart = [...cart, card]
+      setCart(newCart);
+      setCartCount(cartCount+1)
+      setCartTotal(cartTotal + card.price)
+      toast.success(`${card.name} is added to Cart`)
+  }
+  console.log(cart)
   return (
     <div className="container w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
       {
       data.map((card, index) => {
         return (
           <div key={index} className="card">
-            <div className="card bg-base-100 border shadow border-gray-300">
+            <div className="card rounded-2xl bg-base-100 border shadow border-gray-300">
               <div className="card-body">
                 <div>
                   <div className="h-14 w-14 rounded-full border border-green-200 flex items-center justify-center"> <img src={card.icon} alt="" /></div>
@@ -50,7 +64,7 @@ const Card = ({ cardData }) => {
                  
                 </ul>
                 <div className="mt-6">
-                  <button className="btn text-white btn-block font-bold bg-linear-65 from-[#067D68] to-[#50D5B7] rounded-full transition-all ease-in-out duration-400 hover:scale-105">
+                  <button onClick={() => cartHandle(card)} className="btn text-white btn-block font-bold bg-linear-65 from-[#067D68] to-[#50D5B7] rounded-full transition-all ease-in-out duration-400 hover:scale-105">
                     Buy Now
                   </button>
                 </div>

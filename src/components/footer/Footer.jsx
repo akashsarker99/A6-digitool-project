@@ -9,7 +9,7 @@ const Footer = () => {
                <section className='container mx-auto flex flex-col md:flex-row 
                       md:justify-between gap-4 justify-around mt-8 p-10'>
                    <div className='text-center md:text-left'>
-                    <h2 className='text-white sm:text-3xl font-bold mb-2'>DigiTools</h2>
+                    <h2 className='text-white text-2xl sm:text-3xl font-bold mb-2'>DigiTools</h2>
                     <p className='text-white text-sm opacity-90'>Premium digital tools for creators, <br></br>professionals, and businesses. Work smarter<br></br> with our suite of powerful tools.</p>
                 </div>
                

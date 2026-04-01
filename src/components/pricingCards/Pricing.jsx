@@ -4,7 +4,6 @@ import PricingCard from './PricingCard';
 const Pricing = ({response}) => {
     
     const pricingCard = use(response);
-    console.log(pricingCard)
     return (
         <div>
              <div className='container mx-auto mt-14 sm:py-8 text-center px-7'>

@@ -1,5 +1,5 @@
 
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './components/banner/Banner'
 import Cardtools from './components/cardtools/Cardtools'
@@ -8,20 +8,40 @@ import Pricing from './components/pricingCards/Pricing'
 import Stats from './components/stats/Stats'
 import StepCards from './components/stepcard/StepCards'
 import Footer from './components/footer/Footer'
+import CardUpperSide from './components/cardtools/CardUpperSide'
+import { ToastContainer } from 'react-toastify'
 
 const priceCard = async () =>{
     const res = await fetch('/pricingData.json')
     return res.json();
 }
-
+const info = async () =>{
+  const data = await fetch('/data.json');
+  return data.json();
+}
 function App() {
 const response = priceCard();
+const cardData = info();
+const [cart, setCart] =useState([]);
+const [selectOption, setSelectOption] = useState('product');
+const [cartCount, setCartCount] = useState(0);
+const [cartTotal, setCartTotal] = useState(0);
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar cartCount={cartCount} cartTotal={cartTotal}></Navbar>
       <Banner></Banner>
       <Stats></Stats>
-       <Cardtools></Cardtools>
+      <CardUpperSide setSelectOption={setSelectOption} selectOption={selectOption}
+                     cartCount={cartCount}></CardUpperSide>
+
+      <Suspense fallback={<div className='text-center'><span className="loading loading-spinner loading-xl"></span></div>}>
+       <Cardtools cart={cart} setCart={setCart} cardData={cardData}
+                  selectOption={selectOption}
+                  cartCount={cartCount} setCartCount={setCartCount}
+                  cartTotal={cartTotal} setCartTotal={setCartTotal}
+                  
+       ></Cardtools>
+      </Suspense>
        <StepCards></StepCards>
 
        <Suspense fallback={<div className='text-center'><span className="loading loading-spinner loading-xl"></span></div>}>
@@ -30,6 +50,8 @@ const response = priceCard();
        </Suspense>
 
        <Footer></Footer>
+
+       <ToastContainer></ToastContainer>
     </>
   )
 }

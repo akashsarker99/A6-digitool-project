@@ -4,7 +4,7 @@ const PricingCard = ({card}) => {
  
     return (
         <div>
-            <div className={`card ${card.tagType === 'popular' ? 'bg-linear-to-r from-[#067D68] to-[#50D5B7] text-white': 'bg-[#F2F2F2]'} border shadow border-gray-300 h-full flex flex-col relative`}>
+            <div className={`card ${card.tagType === 'popular' ? 'bg-linear-to-r from-[#067D68] to-[#50D5B7] text-white scale-105': 'bg-[#F2F2F2]'} border shadow border-gray-300 rounded-2xl h-full flex flex-col relative`}>
               <div className="card-body">
                 <div>
                   <span className={`
