@@ -28,7 +28,7 @@ const [cartCount, setCartCount] = useState(0);
 const [cartTotal, setCartTotal] = useState(0);
   return (
     <>
-      <Navbar cartCount={cartCount} cartTotal={cartTotal}></Navbar>
+      <Navbar cartCount={cartCount} cartTotal={cartTotal} selectOption={selectOption} setSelectOption={setSelectOption}></Navbar>
       <Banner></Banner>
       <Stats></Stats>
       <CardUpperSide setSelectOption={setSelectOption} selectOption={selectOption}

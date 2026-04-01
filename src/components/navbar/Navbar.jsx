@@ -1,11 +1,11 @@
 import React from 'react';
 import Cart from '../cart/Cart';
 
-const Navbar = ({cartCount, cartTotal}) => {
+const Navbar = ({cartCount, cartTotal, setSelectOption}) => {
     return (
-        <div>
+        <div className='sticky top-0 z-50'>
 
-            <div className="navbar bg-base-100 w-full mx-auto border-b border-gray-400 px-4 md:px-8">
+            <div className="navbar bg-base-100 w-full mx-auto border-b border-gray-400 px-4 md:px-8 ">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -47,12 +47,13 @@ const Navbar = ({cartCount, cartTotal}) => {
           <span className="text-lg font-bold">{cartCount} Items</span>
           <span className="text-[#067D68]">Subtotal: ${cartTotal}</span>
           <div className="card-actions">
-            <button className="btn text-white bg-linear-to-r from-[#067D68] to-[#50D5B7] rounded-full transition-all ease-in-out duration-400 hover:scale-105 btn-block">View cart</button>
+
+            <a className="btn text-white bg-linear-to-r from-[#067D68] to-[#50D5B7] rounded-full transition-all ease-in-out duration-400 hover:scale-105 w-full" href="#products"><button onClick={()=> setSelectOption('cart')} >View cart</button></a>
           </div>
         </div>
       </div>
     </div>
-     <button className='ml-3 text-lg hidden sm:block '>Login</button>
+     <button className='mx-3 font-semibold text-lg hidden sm:block hover:text-[#007c5f]'>Login</button>
            <button className= 'btn btn-sm sm:btn-md text-white font-bold bg-linear-to-r from-[#067D68] to-[#50D5B7] rounded-full ml-2 transition-all ease-in-out duration-400 hover:scale-105'>Get Started</button>
    
   </div>

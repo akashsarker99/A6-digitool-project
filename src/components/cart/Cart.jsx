@@ -1,10 +1,14 @@
 import React from 'react';
 import { TiDelete } from 'react-icons/ti';
 import { toast } from 'react-toastify';
+import Cartimg from '../../assets/Cart.png';
 
 const Cart = ({cart, setCart, cartCount, setCartCount, cartTotal, setCartTotal}) => {
     const cartDeleteHandle =(cartCard)=>{
         let newcart = cart.filter(cartitem => cartitem.name !== cartCard.name);
+        toast.success('Product removed from cart',{
+            theme: 'dark'
+        })
         setCart(newcart);
         setCartCount(cartCount-1);
         setCartTotal(cartTotal-cartCard.price);
@@ -23,9 +27,17 @@ const Cart = ({cart, setCart, cartCount, setCartCount, cartTotal, setCartTotal})
                <div className='p-5 sm:p-8 border border-gray-300 shadow rounded-2xl '>
                 <h2 className='text-xl sm:text-2xl font-bold'>Your Cart</h2>
                
-              <div className='space-y-3.5 mt-5'>
+              <div className='mt-5'>
                  {
-                cart.map(cartCard =>  <div className='flex justify-between items-center bg-[#F9FAFC] p-5 rounded-2xl shadow'>
+                    cartCount === 0 ? 
+            <div className='flex flex-col justify-center items-center mb-10'>
+             <img className='w-28' src={Cartimg} alt="" />
+             <h2 className='text-xl text-[#627382] font-semibold'>Your cart is empty.</h2>
+           </div> : 
+           
+    <section className='space-y-3.5'>
+    {
+     cart.map(cartCard =>  <div className='flex justify-between items-center bg-[#F9FAFC] p-5 rounded-2xl shadow'>
                     <div className='flex gap-6 items-center'>
                        <span className='h-14 w-14 rounded-full border flex justify-center items-center border-gray-300'><img src={cartCard.icon} alt="" /></span>
                         <div>
@@ -36,16 +48,21 @@ const Cart = ({cart, setCart, cartCount, setCartCount, cartTotal, setCartTotal})
                         <span onClick={()=> cartDeleteHandle(cartCard)} className='btn h-10 w-10 rounded-full text-2xl text-red-500'><button><TiDelete></TiDelete></button></span>
                 </div>)
                }
-              </div>
-              <div className='my-3 flex justify-between'>
+
+        <div className='my-3 flex justify-between'>
                 <p className='font-semibold'>Total:</p>
                 <p className='font-bold text-lg'>${cartTotal}</p>
               </div>
               <button onClick={()=> proceedcheck()} className='btn text-white btn-block font-bold bg-linear-65 from-[#067D68] to-[#50D5B7] rounded-full transition-all ease-in-out duration-400 hover:scale-102'>Proceed To Checkout</button>
+</section>
+                 }
+              
             </div>
+              </div>
            </div>
         </div>
     );
 };
 
 export default Cart;
+

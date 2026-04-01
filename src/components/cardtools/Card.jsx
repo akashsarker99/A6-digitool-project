@@ -4,9 +4,8 @@ const Card = ({ data, cart, setCart, cartCount, setCartCount, cartTotal, setCart
 
   const cartHandle =(card)=>{
      let itemExist = cart.find(cartitem => cartitem.name === card.name);
-
      if(itemExist){
-      toast.error('Product already exist in cart')
+      toast.error('Product already exists in cart')
       return
      }
       let newCart = [...cart, card]
@@ -14,8 +13,10 @@ const Card = ({ data, cart, setCart, cartCount, setCartCount, cartTotal, setCart
       setCartCount(cartCount+1)
       setCartTotal(cartTotal + card.price)
       toast.success(`${card.name} is added to Cart`)
+
+      return itemExist;
   }
-  console.log(cart)
+ 
   return (
     <div className="container w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
       {
@@ -64,8 +65,13 @@ const Card = ({ data, cart, setCart, cartCount, setCartCount, cartTotal, setCart
                  
                 </ul>
                 <div className="mt-6">
-                  <button onClick={() => cartHandle(card)} className="btn text-white btn-block font-bold bg-linear-65 from-[#067D68] to-[#50D5B7] rounded-full transition-all ease-in-out duration-400 hover:scale-105">
-                    Buy Now
+                  <button onClick={() => cartHandle(card)} className={`btn text-white btn-block font-bold 
+                    ${
+                     cart.find(cartitem => cartitem.name === card.name) ? "bg-green-600 text-black": "bg-linear-65 from-[#067D68] to-[#50D5B7]"
+                    } rounded-full transition-all ease-in-out duration-400 hover:scale-105`}>
+                    {
+                     cart.find(cartitem => cartitem.name === card.name) ? "✔ Added to cart!": "Buy Now"
+                    }
                   </button>
                 </div>
               </div>

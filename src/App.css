@@ -2,3 +2,6 @@ footer ul li{
     color: white;
     font-size: 13px;
 }
+html {
+  scroll-behavior: smooth;
+}

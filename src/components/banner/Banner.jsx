@@ -1,7 +1,7 @@
 import React from 'react';
 import bannerimg from '../../assets/banner.png'
 import { FaDotCircle, FaPlay } from 'react-icons/fa';
-import { CiPlay1 } from 'react-icons/ci';
+import { FaArrowRightLong } from 'react-icons/fa6';
 const Banner = () => {
     return (
         <div>
@@ -22,10 +22,10 @@ Explore Products
 
       </p>
      <div className='flex gap-3 flex-col sm:flex-row'>
-         <button className="btn text-white font-bold bg-linear-65 from-[#067D68] to-[#50D5B7] rounded-full transition-all ease-in-out duration-400 hover:scale-105 btn-sm sm:btn-md mx-auto sm:mx-0">Explore Products</button>
-         <div className='p-[1px] rounded-full bg-linear-to-r from-[#067D68] to-[#50D5B7] inline-block btn-sm sm:btn-md mx-auto sm:mx-0'>
+         <a href="#products"><button className='btn text-white font-semibold bg-linear-to-r from-[#067D68] to-[#50D5B7] rounded-full transition-all ease-in-out duration-400 hover:-translate-y-1 hover:scale-102 btn-sm sm:btn-md mx-auto sm:mx-0'>Explore Products <FaArrowRightLong></FaArrowRightLong></button></a>
+         <div className='p-[1px] rounded-full bg-linear-to-r from-[#067D68] to-[#50D5B7] btn-sm sm:btn-md mx-auto sm:mx-0 transition-all ease-in-out duration-400 hover:-translate-y-1 hover:scale-102'>
 
-        <button className="btn font-bold border-0 text-[#067D68] rounded-full hover:bg-linear-to-r from-[#067D68] to-[#50D5B7] hover:text-white transition-all ease-in-out duration-400 hover:scale-105 btn-sm sm:btn-md"><FaPlay></FaPlay> Watch Demo</button>
+        <button className="btn font-semibold border-0 text-[#067D68] rounded-full hover:bg-linear-to-r from-[#067D68] to-[#50D5B7] hover:text-white "><FaPlay></FaPlay> Watch Demo</button>
          </div>
      </div>
     </div>
