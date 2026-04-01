@@ -4,11 +4,11 @@ My project's name is Digitool. It's a digital productivity toolkit platform.
 Digitool project is web-based platform that provides a collection of premium digital tools like AI-powered writing assistants, design templates, and stock assets etc. I designed it to help users to access multiple resources in one place easily.
 
 ## Technologies I used:
-React.js
-Tailwind CSS, DaisyUI
-JavaScript (ES6)
-React-Toastify
-JSON Data
+>React.js
+>Tailwind CSS, DaisyUI
+>JavaScript (ES6)
+>React-Toastify
+>JSON Data
 
 ## Key Features:
 1. Interactive Cart System: 
