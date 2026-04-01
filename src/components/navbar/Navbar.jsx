@@ -21,7 +21,7 @@ const Navbar = ({cartCount, cartTotal, setSelectOption}) => {
          <li><a href="">FAQ</a></li>
       </ul>
     </div>
-    <a href='banner' className="btn btn-ghost font-extrabold text-2xl md:text-3xl bg-linear-to-r from-[#067D68] to-[#50D5B7] bg-clip-text text-transparent">DigiTools</a>
+    <a href='#banner' className="btn btn-ghost font-extrabold text-2xl md:text-3xl bg-linear-to-r from-[#067D68] to-[#50D5B7] bg-clip-text text-transparent">DigiTools</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

@@ -41,8 +41,8 @@ const Cart = ({cart, setCart, cartCount, setCartCount, cartTotal, setCartTotal})
                     <div className='flex gap-2 sm:gap-6 items-center'>
                        <span className='h-10 w-10 sm:h-14 sm:w-14 rounded-full border flex justify-center items-center border-gray-300'><img className='w-[50%]' src={cartCard.icon} alt="" /></span>
                         <div>
-                            <h2 className='font-bold text-xsm sm:text-xl'>{cartCard.name}</h2>
-                            <p className='text-[#627382] font-bold text-xsm sm:text-lg'>${cartCard.price}</p>
+                            <h2 className='font-bold text-[13px] sm:text-xl'>{cartCard.name}</h2>
+                            <p className='text-[#627382] font-bold text-[11px] sm:text-lg'>${cartCard.price}</p>
                         </div>
                     </div>
                         <span onClick={()=> cartDeleteHandle(cartCard)} className='btn h-8 w-8 sm:h-10 sm:w-10 rounded-full text-2xl text-red-500'><button><TiDelete></TiDelete></button></span>

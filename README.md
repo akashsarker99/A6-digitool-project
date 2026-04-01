@@ -1,16 +1,21 @@
-# React + Vite
+## My Project: 
+My project's name is Digitool. It's a digital productivity toolkit platform.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Digitool project is web-based platform that provides a collection of premium digital tools like AI-powered writing assistants, design templates, and stock assets etc. I designed it to help users to access multiple resources in one place easily.
 
-Currently, two official plugins are available:
+## Technologies I used:
+React.js
+Tailwind CSS, DaisyUI
+JavaScript (ES6)
+React-Toastify
+JSON Data
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Key Features:
+1. Interactive Cart System: 
+   Users can add products to the cart and view selected items dynamically, improving the shopping experience.
 
-## React Compiler
+2. Responsive Design: 
+   Clean, minimal, and mobile-friendly interface.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Smooth Navigation & Section Jumping: 
+   Navigation bar allows smooth scrolling between sections.
