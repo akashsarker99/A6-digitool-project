@@ -7,13 +7,13 @@ const Footer = () => {
         <div>
             <footer className='bg-[#101727] '>
                <section className='container mx-auto flex flex-col md:flex-row 
-                      md:justify-between gap-4  justify-around p-10'>
+                      justify-around gap-8  p-10 '>
                    <div className='text-center md:text-left'>
                     <h2 className='text-white text-2xl sm:text-3xl font-bold mb-2'>DigiTools</h2>
                     <p className='text-white text-sm opacity-90'>Premium digital tools for creators, <br></br>professionals, and businesses. Work smarter<br></br> with our suite of powerful tools.</p>
                 </div>
                
-                  <div className='grid grid-cols-3 gap-8 md:gap-30 text-center md:text-left'>
+                  <div className='grid grid-cols-3 gap-8 lg:gap-25 text-center md:text-left'>
                     
                       <div><h2 className='text-lg sm:text-xl font-semibold text-white mb-2'>Product</h2>
                      <ul className='space-y-2'>
@@ -42,7 +42,7 @@ const Footer = () => {
                   </div>
    
               
-                <div className='text-center md:text-left'>
+                <div className='text-center md:text-left md:ml-8'>
                     <h2 className='text-lg sm:text-xl font-semibold text-white mb-2'>Social Links</h2>
                      <div className='flex gap-4 justify-center md:justify-start'>
                         <FaInstagram className='text-white text-2xl sm:text-3xl hover:text-pink-600'></FaInstagram>
